@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Skills</title>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Features/css/Navigation_Bar2.css">
+<link rel="stylesheet" href="Features/css/Hobbies.css">
+<link rel="stylesheet" href="Features/css/Accordion.css">
+<link rel="stylesheet" href="Features/css/Fonts.css">
+<link rel="stylesheet" href="Features/css/Footer.css">
+<link rel="stylesheet" href="Features/css/Back_To_Top.css">
+
+        
+    </head>
+    <body>
+
+      <nav class="navbar">
+        <h5 class="logo"></h5>
+            <ul class="menu">
+            <li class="nav-item"><a href="My Introduction.html">Home</a> &nbsp; </li>
+            <li class="nav-item"> <a href="Hobbies.html">Hobbies</a> &nbsp; </li>
+            <li class="nav-item"> <a href="Skills.html">Skills</a> &nbsp;</li>
+            <li class="nav-item"> <a href="Ideas.html">Ideas</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+      
+        <img src="Features/images/theme/moon.png" alt="moon" id="icon">
+      </nav> 
+      <script>
+        /*dark mode*/
+var icon= document.getElementById("icon");
+icon.onclick =function(){
+document.body.classList.toggle("dark-theme");
+if(document.body.classList.contains("dark-theme")){
+    icon.src = "Features/images/theme/sun1.png";
+}
+else{
+icon.src ="Features/images/theme/moon.png";
+ }
+}
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".menu");
+     </script>
+      <script src='Features/js/Navigation_Bar2.js'></script>
+
+      <!--Accordion-->
+<div class="text"><h2 style="text-align:center"> Idea for Start Up:</h2>
+</div>
+    <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Problem</h3>
+          </div>
+          <div class="accordion-content">
+                <p>Problem Description: Many individuals in our society, especially those in remote areas or underprivileged communities, face challenges in accessing quality education. This lack of access hinders their personal and professional development, limiting their opportunities for growth and success.</p>
+              </div>
+          </div>
+        
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Solution</h3>
+          </div>
+          <div class="accordion-content">
+            <p> Developing Mobile Education Centers</p>
+        </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Prototype</h3>
+          </div>
+          <div class="accordion-content">
+            <p>To address the problem of limited access to quality education, we propose the implementation of Mobile Education Centers. These centers will be equipped with essential educational resources, such as books, digital learning tools, and teaching aids, and will be staffed by qualified teachers and volunteers.
+
+            </p>
+          </div>
+        </div>
+       </div>
+       <script src='Features/js/Accordion.js'></script>
+<!--Accordion-->
+
+<br><br><br><br>
+<h4 class="clss" style="text-align: center;" >Important Beliefs/Messages</h4>
+        <h1 class="sans-serif red">"The greatest glory in living lies not in never falling, but in rising every time we fall." - Nelson Mandela</h1>
+            <h2 class="serif green">"Be the change you wish to see in the world." - Mahatma Gandhi</h2>
+            <h3 class="monospace blue">"There are only two hard things in Computer Science: cache invalidation and naming things." - Phil Karlton</h3>
+
+            <br><br>
+            <section id="contact">
+              <div id="footer">
+                <div>
+                  <div>
+                    
+                    <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" id="facebook">Facebook</a>
+                    <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" id="twitter">Twitter</a>
+                    <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" id="googleplus">Google&#43;</a>
+                  </div>
+                  <a href="Contact_me.html" target="_self">Contact me</a>&nbsp;
+                <a href="Feedback.html">Feedback</a>
+                </div>
+                <p>
+                  &copy; Copyright 2023. All rights reserved.
+                </p>
+              </div>
+                  </section>
+                  <button onclick="topFunction()" id="top-button" title="Go to top">Top</button>
+                  <script src='Features/js/Back_To_Button.js'></script>
+
+    </body>
+    </html>

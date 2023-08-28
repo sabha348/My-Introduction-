@@ -1,0 +1,171 @@
+po<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Learnings</title>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Features/css/Navigation_Bar2.css">
+<link rel="stylesheet" href="Features/css/Hobbies.css">
+<link rel="stylesheet" href="Features/css/New_label.css">
+<link rel="stylesheet" href="Features/css/Footer.css">
+<link rel="stylesheet" href="Features/css/Back_To_Top.css">
+
+
+    </head>
+    <body>
+
+      <nav class="navbar">
+        <h5 class="logo"></h5>
+            <ul class="menu">
+            <li class="nav-item"><a href="My Introduction.html">Home</a> &nbsp; </li>
+            <li class="nav-item"> <a href="Hobbies.html">Hobbies</a> &nbsp; </li>
+            <li class="nav-item"> <a href="Skills.html">Skills</a> &nbsp;</li>
+            <li class="nav-item"> <a href="Ideas.html">Ideas</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+      
+        <img src="Features/images/theme/moon.png" alt="moon" id="icon">
+      </nav> 
+      <script>
+         /*dark mode*/
+ var icon= document.getElementById("icon");
+ icon.onclick =function(){
+ document.body.classList.toggle("dark-theme");
+ if(document.body.classList.contains("dark-theme")){
+     icon.src = "Features/images/theme/sun1.png";
+ }
+ else{
+ icon.src ="Features/images/theme/moon.png";
+  }
+ }
+
+ const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".menu");
+      </script>
+      <script src='Features/js/Navigation_Bar2.js'></script>
+        
+
+    
+      <p style="color:rgb(0, 255, 0); font-size:30px; text-align:center">Features In Html</p>
+        <!--New label html-->
+        <br><br>
+
+<section class="hobbies">
+        <p style="color:rgb(0, 0, 0); font-size:20px; text-align:center">1.New Label</p>
+
+  <li><a href="#">This is a new article that was published today.</a>
+    <span class="new">New</span>
+  </li>
+  <li><a href="#">This is another new article that was published yesterday.</a>
+    <span style="font-color:red;" class="new">New</span>
+  </li>
+  <li><a href="#">This is an older article that was published last week.</a></li>
+  <li><a href="#">This is another older article that was published last month.</a></li>
+
+<!--New label html-->
+      
+<br><br>
+
+<p style="color:rgb(0, 0, 0); font-size:20px; text-align:center">2.User Location</p>
+    <p>Click the button to get your coordinates.</p>
+  
+  <button onclick="getLocation()">Try It</button>
+  
+  <p id="demo"></p>
+  
+  <script>
+  var x = document.getElementById("demo");
+  
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
+  
+  function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+  }
+  </script>
+
+<br><br>
+
+<p style="color:rgb(0, 0, 0); font-size:20px; text-align:center">3.Drop Files</p>
+<!--Drag files html-->
+<div class="dropzone"
+ondragover="event.preventDefault(); this.classList.add('dragover');"
+ondragleave="this.classList.remove('dragover');"
+ondrop="this.classList.remove('dragover'); handleDrop(event);">
+Drag and drop files here
+</div>
+<!--Drag files html-->
+
+<style>
+    .dropzone {
+      border: 2px dashed #ccc;
+      width: 500px;
+      height: 300px;
+      margin: 20px auto;
+      text-align: center;
+      font-size: 20px;
+      line-height: 300px;
+    }
+    .dropzone.dragover {
+      background-color: #f5f5f5;
+    }
+  </style>
+
+<!--Drag files js-->
+<script>
+function handleDrop(event) {
+event.preventDefault();
+var files = event.dataTransfer.files;
+for (var i = 0; i < files.length; i++) {
+ var file = files[i];
+ console.log('Uploading file:', file.name);
+ // Do something with the file, e.g. upload it to the server
+}
+}
+</script>
+<!--Drag files js-->
+
+
+<p style=color:rgb(0,0,0);font-size:20px;text-align:center;>4.Embed Video</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BsDoLVMnmZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+
+
+
+      <br><br>
+      <section id="contact">
+        <div id="footer">
+          <div>
+            <div>
+              
+              <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" id="facebook">Facebook</a>
+              <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" id="twitter">Twitter</a>
+              <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" id="googleplus">Google&#43;</a>
+            </div>
+            <a href="Contact_me.html" target="_self">Contact me</a>&nbsp;
+          <a href="Feedback.html">Feedback</a>
+          </div>
+          <p>
+            &copy; Copyright 2023. All rights reserved.
+          </p>
+        </div>
+            </section>
+            <button onclick="topFunction()" id="top-button" title="Go to top">Top</button>
+            <script src='Features/js/Back_To_Button.js'></script>
+    
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hobbies</title>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Features/css/Navigation_Bar2.css">
+<link rel="stylesheet" href="Features/css/Hobbies.css">
+<link rel="stylesheet" href="Features/css/Footer.css">
+<link rel="stylesheet" href="Features/css/Back_To_Top.css">
+
+
+    </head>
+    <body>
+
+      <nav class="navbar">
+        <h5 class="logo"></h5>
+            <ul class="menu">
+            <li class="nav-item"><a href="My Introduction.html">Home</a> &nbsp; </li>
+            <li class="nav-item"> <a href="Hobbies.html">Hobbies</a> &nbsp; </li>
+            <li class="nav-item"> <a href="Skills.html">Skills</a> &nbsp;</li>
+            <li class="nav-item"> <a href="about.html">Ideas</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+      
+        <img src="Features/images/theme/moon.png" alt="moon" id="icon">
+      </nav> 
+      <script>
+         /*dark mode*/
+ var icon= document.getElementById("icon");
+ icon.onclick =function(){
+ document.body.classList.toggle("dark-theme");
+ if(document.body.classList.contains("dark-theme")){
+     icon.src = "Features/images/theme/sun1.png";
+ }
+ else{
+ icon.src ="Features/images/theme/moon.png";
+  }
+ }
+
+ const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".menu");
+      </script>
+      <script src='Features/js/Navigation_Bar2.js'></script>
+        
+
+    <section class="hobbies">
+        <h2 style="color:rgb(48, 187, 48)">Hobbies</h2>
+        <div class="hobby-item">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/BP/FY/OU/147304712/whatsapp-image-2022-02-20-at-5-05-41-pm-500x500.jpeg" alt="Reading books">
+          <h3>Reading books</h3>
+        </div>
+        <div class="hobby-item">
+          <img src="https://img.freepik.com/premium-vector/realistic-chess-pieces-jumping-group-set_208581-1322.jpg?w=740" alt="Playing Chess">
+          <h3>Playing Chess</h3>
+        </div>
+        <div class="hobby-item">
+          <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/09/how-to-draw-hands-1.jpg" alt="Drawing">
+          <h3>Drawing</h3>
+        </div>
+        <div class="hobby-item">
+          <img src="https://s.pfst.net/2015.11/9796187672104526e15c3c560211d5471b59f7cd083e_b.jpg" alt="Talking to people">
+          <h3>Talking To People</h3>
+        </div>
+      </section>
+
+      <br><br>
+      <section id="contact">
+        <div id="footer">
+          <div>
+            <div>
+              
+              <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" id="facebook">Facebook</a>
+              <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" id="twitter">Twitter</a>
+              <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" id="googleplus">Google&#43;</a>
+            </div>
+            <a href="Contact_me.html" target="_self">Contact me</a>&nbsp;
+          <a href="Feedback.html">Feedback</a>
+          </div>
+          <p>
+            &copy; Copyright 2023. All rights reserved.
+          </p>
+        </div>
+            </section>
+            <button onclick="topFunction()" id="top-button" title="Go to top">Top</button>
+            <script src='Features/js/Back_To_Button.js'></script>
+    
+    </body>
+</html>
